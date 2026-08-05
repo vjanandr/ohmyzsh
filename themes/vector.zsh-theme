@@ -54,8 +54,8 @@ _precmd() {
   fi
   _CMD_ACTIVE=0
 }
-add-zsh-hook preexec _vijay_preexec
-add-zsh-hook precmd _vijay_precmd
+add-zsh-hook preexec _preexec
+add-zsh-hook precmd _precmd
 
 # Force prompt redraw on terminal/tmux pane resize
 TRAPWINCH() {
